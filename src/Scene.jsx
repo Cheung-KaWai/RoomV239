@@ -2,14 +2,15 @@ import { Box, Environment, OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import React from "react";
 import { styled } from "styled-components";
+import { RoomV239 } from "./RoomV239";
 
 export const Scene = () => {
   return (
     <CanvasContainer>
-      <Canvas>
+      <Canvas flat>
         <OrbitControls />
         <Environment preset="apartment" />
-        <Box />
+        <RoomV239 />
       </Canvas>
     </CanvasContainer>
   );
