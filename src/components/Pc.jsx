@@ -133,5 +133,3 @@ export function Pc(props) {
     </group>
   );
 }
-
-useGLTF.preload("/pc-transformed.glb");
