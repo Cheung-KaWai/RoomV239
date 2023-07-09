@@ -17,7 +17,6 @@ export function Desk(props) {
   lm.colorSpace = LinearSRGBColorSpace;
   materials["Material.001"].lightMap = lm;
   materials["Material.001"].lightMapIntensity = 2.5;
-
   materials["Material.002"].roughness = 0.8;
 
   return (

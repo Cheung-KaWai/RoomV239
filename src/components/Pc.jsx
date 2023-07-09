@@ -10,7 +10,8 @@ export function Pc(props) {
   const { nodes, materials } = useGLTF("/models/pc-transformed.glb");
 
   for (const material of Object.values(materials)) {
-    material.envMapIntensity = 1;
+    material.envMapIntensity = 0.5;
+    material.roughness = 0.9;
   }
 
   return (
