@@ -8,6 +8,7 @@ import { Controls } from "./Controls";
 import { Chair } from "./Chair";
 import { Pc } from "./Pc";
 import { Painting } from "./Painting";
+import { Curtain } from "./Curtain";
 
 export const Scene = () => {
   return (
@@ -18,11 +19,14 @@ export const Scene = () => {
       >
         <Controls />
         <Environment preset="studio" />
-        <RoomV239 />
-        <Desk />
-        <Pc />
-        <Chair />
-        <Painting />
+        <group rotation-y={-Math.PI / 2}>
+          <RoomV239 />
+          <Desk />
+          <Pc />
+          <Chair />
+          <Painting />
+        </group>
+        <Curtain />
       </Canvas>
     </CanvasContainer>
   );

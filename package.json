@@ -19,6 +19,7 @@
     "simple-zustand-devtools": "^1.1.0",
     "styled-components": "^6.0.2",
     "three": "^0.154.0",
+    "vite-plugin-glsl": "^1.1.2",
     "zustand": "^4.3.9"
   },
   "devDependencies": {

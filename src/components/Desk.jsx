@@ -12,11 +12,13 @@ export function Desk(props) {
   materials["Material.001"].roughness = 1;
   materials["Material.001"].envMapIntensity = 0;
 
-  const lm = useTexture("/textures/desk/Desk_Bake4_PBR_Lightmap.jpg");
+  const lm = useTexture("/textures/desk/Desk_Bake4_CyclesBake_DIFFUSE.jpg");
   lm.flipY = false;
   lm.colorSpace = LinearSRGBColorSpace;
   materials["Material.001"].lightMap = lm;
   materials["Material.001"].lightMapIntensity = 2.5;
+
+  materials["Material.002"].roughness = 0.8;
 
   return (
     <group

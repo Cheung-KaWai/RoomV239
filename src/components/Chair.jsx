@@ -13,6 +13,8 @@ export function Chair(props) {
     material.envMapIntensity = 0.4;
   }
 
+  materials.Fabric.roughness = 1;
+
   return (
     <group
       {...props}
