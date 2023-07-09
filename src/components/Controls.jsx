@@ -21,7 +21,7 @@ export const Controls = () => {
       maxPolarAngle={Math.PI / 2}
       minAzimuthAngle={-Math.PI / 12}
       maxAzimuthAngle={Math.PI / 16}
-      onChange={handleChange}
+      // onChange={handleChange}
     />
   );
 };
