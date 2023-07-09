@@ -8,6 +8,11 @@ import { useGLTF } from "@react-three/drei";
 
 export function Chair(props) {
   const { nodes, materials } = useGLTF("/models/chair-transformed.glb");
+
+  for (const material of Object.values(materials)) {
+    material.envMapIntensity = 0.4;
+  }
+
   return (
     <group
       {...props}

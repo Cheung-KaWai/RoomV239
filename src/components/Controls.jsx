@@ -10,9 +10,9 @@ export const Controls = () => {
 
   return (
     <OrbitControls
-      object-position={[3.42, 0.96, -0.91]}
-      object-rotation={[-1.53, 1.48, 1.53]}
-      target={[-0.43, 0.6, -0.93]}
+      object-position={[3.32, 1.51, -1]}
+      object-rotation={[-1.54, 1.2, 1.54]}
+      target={[-0.3, 0.125, -1.035]}
       ref={orbit}
       onChange={handleChange}
     />

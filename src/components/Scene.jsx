@@ -6,16 +6,23 @@ import { RoomV239 } from "./RoomV239";
 import { Desk } from "./Desk";
 import { Controls } from "./Controls";
 import { Chair } from "./Chair";
+import { Pc } from "./Pc";
+import { Painting } from "./Painting";
 
 export const Scene = () => {
   return (
     <CanvasContainer>
-      <Canvas>
+      <Canvas
+        flat
+        legacy
+      >
         <Controls />
-        <Environment preset="apartment" />
+        <Environment preset="studio" />
         <RoomV239 />
         <Desk />
+        <Pc />
         <Chair />
+        <Painting />
       </Canvas>
     </CanvasContainer>
   );

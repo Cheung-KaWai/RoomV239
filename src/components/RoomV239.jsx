@@ -8,7 +8,7 @@ import { useGLTF } from "@react-three/drei";
 import { useBake } from "../hooks/useBake";
 
 export function RoomV239(props) {
-  const { nodes, materials } = useGLTF("/public/models/roomV239-transformed.glb");
+  const { nodes, materials } = useGLTF("/models/roomV239.glb");
 
   const floorRef = useRef();
   const baseboardRef = useRef();
@@ -18,8 +18,8 @@ export function RoomV239(props) {
 
   const floorMaterial = useBake("floor", { envMapIntensity: 0, lightMapIntensity: 1 });
   const baseboardMaterial = useBake("baseboard", { envMapIntensity: 0, lightMapIntensity: 1 });
-  const wallsMaterial = useBake("walls", { envMapIntensity: 0, lightMapIntensity: 1.5 });
-  const ceilingMaterial = useBake("ceiling", { envMapIntensity: 0, lightMapIntensity: 1.5 });
+  const wallsMaterial = useBake("walls", { envMapIntensity: 0, lightMapIntensity: 1.7 });
+  const ceilingMaterial = useBake("ceiling", { envMapIntensity: 0, lightMapIntensity: 1.7 });
   const windowMaterial = useBake("window", {
     envMapIntensity: 0,
     lightMapIntensity: 1.1,
@@ -61,11 +61,12 @@ export function RoomV239(props) {
           geometry={nodes.Floor.geometry}
           material={floorMaterial}
         />
+
         <mesh
           ref={windowRef}
           geometry={nodes.WindowFrame.geometry}
           material={windowMaterial}
-          position={[-0.082461, 0.464845, -1.002121]}
+          position={[-0.300243, 0.464845, -1.002121]}
           rotation={[0, 1.570535, 0]}
         >
           <mesh

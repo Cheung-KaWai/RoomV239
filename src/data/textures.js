@@ -8,11 +8,11 @@ export const data = {
     lightMap: "/textures/baseboard/lightmap.jpg",
   },
   walls: {
-    lightMap: "/textures/wall/lightmap.jpg",
-    aoMap: "/textures/wall/ao.jpg",
+    lightMap: "/textures/wall/Room_Bake4_CyclesBake_DIFFUSE.jpg",
+    aoMap: "/textures/wall/Room_Bake4_PBR_Ambient Occlusion.jpg",
   },
   ceiling: {
-    lightMap: "/textures/ceiling/lightmap.jpg",
+    lightMap: "/textures/ceiling/Ceiling_Bake4_CyclesBake_DIFFUSE.jpg",
     aoMap: "/textures/ceiling/ao.jpg",
   },
   window: {
